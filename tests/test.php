@@ -6,6 +6,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use Vtvwww\Serializer;
 use Vtvwww\JsonFormat;
 use Vtvwww\YamlFormat;
+use Vtvwww\XmlFormat;
 
 class Test {
     public $email;
@@ -31,6 +32,13 @@ echo str_repeat(PHP_EOL, 3);
 echo 'YamlFormat  ---------------------------------- ' . PHP_EOL;
 echo $serializer
     ->addFormater(new YamlFormat())
+    ->convert();
+
+echo str_repeat(PHP_EOL, 3);
+
+echo 'XmlFormat  ---------------------------------- ' . PHP_EOL;
+echo $serializer
+    ->addFormater(new XmlFormat())
     ->convert();
 
 echo PHP_EOL;
