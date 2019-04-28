@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/FormatInterface.php';
+namespace Vtvwww;
 
 abstract class AbstractFormat implements FormatInterface
 {

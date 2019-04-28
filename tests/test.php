@@ -1,7 +1,11 @@
 #!/usr/bin/env php
 <?php
 
-require_once __DIR__ . '/../src/Serializer.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Vtvwww\Serializer;
+use Vtvwww\JsonFormat;
+use Vtvwww\YamlFormat;
 
 class Test {
     public $email;
@@ -14,10 +18,8 @@ class Test {
     }
 }
 
-
 $serializer = new Serializer();
 $serializer->addObject (new Test('test@email.com', 'test'));
-
 
 echo 'JsonFormat  ---------------------------------- ' . PHP_EOL;
 echo $serializer

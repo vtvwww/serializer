@@ -1,0 +1,16 @@
+{
+    "name": "vtvwww/serializer",
+    "type": "library",
+    "authors": [
+        {
+            "name": "vtvwww",
+            "email": "vtv.www@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Vtvwww\\": "src/"
+        }
+    }
+}

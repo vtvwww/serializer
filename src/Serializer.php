@@ -1,8 +1,6 @@
 <?php
 
-require_once __DIR__ . '/Formats/FormatInterface.php';
-require_once __DIR__ . '/Formats/JsonFormat.php';
-require_once __DIR__ . '/Formats/YamlFormat.php';
+namespace Vtvwww;
 
 class Serializer {
     private $formater;
