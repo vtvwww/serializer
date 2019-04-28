@@ -7,7 +7,9 @@
             "email": "vtv.www@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "symfony/yaml": "^4.2"
+    },
     "autoload": {
         "psr-4": {
             "Vtvwww\\": "src/"
